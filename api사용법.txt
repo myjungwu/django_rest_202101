@@ -1,0 +1,23 @@
+ 전체목록조회 GET http://localhost:8080/persons
+ 1개 조회 GET http://localhost:8080/persons/1
+ 등록 POST http://localhost:8080/persons/  ( / 슬래쉬 꼭)
+   header  content-type  application/json
+   body     raw
+   {
+     "first_name": "postman",
+     "last_name": "chrome",
+     "age": 440
+    }
+ 수정 PUT http://localhost:8080/persons/4/  ( / 슬래쉬 꼭)
+   header  content-type  application/json
+   body     raw
+   {
+     "first_name": "postman22",
+     "last_name": "chrome22",
+     "age": 44022
+    }
+  삭제 DELETE
+    전체삭제
+    http://localhost:8080/persons/  ( / 슬래쉬 꼭)
+    1건 삭제
+    http://localhost:8080/persons/4/    ( / 슬래쉬 꼭)
